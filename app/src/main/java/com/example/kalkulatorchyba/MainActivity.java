@@ -45,22 +45,22 @@ public class MainActivity extends AppCompatActivity {
             int liczbaDodawanie_1 = Integer.parseInt(dodawanie_1.getText().toString());
             int liczbaDodawanie_2 = Integer.parseInt(dodawanie_2.getText().toString());
             int suma = liczbaDodawanie_1 + liczbaDodawanie_2;
-            dodawanie_wynik.setText(suma);
+            dodawanie_wynik.setText(String.valueOf(suma));
 
             int licznaOdejmowanie_1 = Integer.parseInt(odejmowanie_1.getText().toString());
             int liczbaOdejmowanie_2 = Integer.parseInt(odejmowanie_2.getText().toString());
-            int roznica = liczbaDodawanie_1 + liczbaDodawanie_2;
-            odejmowanie_wynik.setText(roznica);
+            int roznica = licznaOdejmowanie_1 - liczbaOdejmowanie_2;
+            odejmowanie_wynik.setText(String.valueOf(roznica));
 
             int liczbaMnozenie_1 = Integer.parseInt(mnozenie_1.getText().toString());
             int liczbaMnozenie_2 = Integer.parseInt(mnozenie_2.getText().toString());
-            int iloczyn = liczbaDodawanie_1 + liczbaDodawanie_2;
-            mnozenie_wynik.setText(suma);
+            int iloczyn = liczbaMnozenie_1 * liczbaMnozenie_2;
+            mnozenie_wynik.setText(String.valueOf(iloczyn));
 
             int liczbaDzielenie_1 = Integer.parseInt(dzielenie_1.getText().toString());
             int liczbaDzielenie_2 = Integer.parseInt(dzielenie_2.getText().toString());
-            int iloraz = liczbaDodawanie_1 + liczbaDodawanie_2;
-            dzielenie_wynik.setText(suma);
+            int iloraz = liczbaDzielenie_1 / liczbaDzielenie_2;
+            dzielenie_wynik.setText(String.valueOf(iloraz));
         });
     }
 }
