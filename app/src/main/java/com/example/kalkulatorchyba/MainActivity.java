@@ -3,6 +3,7 @@ package com.example.kalkulatorchyba;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -62,5 +63,7 @@ public class MainActivity extends AppCompatActivity {
             int iloraz = liczbaDzielenie_1 / liczbaDzielenie_2;
             dzielenie_wynik.setText(String.valueOf(iloraz));
         });
+//        Komunikat podczas błedu wyjątek
+//        Toast.makeText(getBaseContext(), "błąd!", Toast.LENGTH_SHORT).show();
     }
 }
